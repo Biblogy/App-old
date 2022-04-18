@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21A5506j" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="addedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="avgCoverColor" optional="YES" attributeType="String"/>
+        <attribute name="cover" optional="YES" attributeType="Binary"/>
+        <attribute name="discription" optional="YES" attributeType="String"/>
+        <attribute name="done" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="doneAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isbn" optional="YES" attributeType="String"/>
+        <attribute name="pages" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="progress" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="stateValue" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="bookChallenge" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Challenges" inverseName="challengeBook" inverseEntity="Challenges"/>
+        <relationship name="bookProgress" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="ReadProgress" inverseName="progressBook" inverseEntity="ReadProgress"/>
+    </entity>
+    <entity name="Challenges" representedClassName="Challenges" syncable="YES" codeGenerationType="class">
+        <attribute name="book" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isDone" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isFailed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="streak" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timeType" optional="YES" attributeType="String"/>
+        <relationship name="challengeBook" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Book" inverseName="bookChallenge" inverseEntity="Book"/>
+    </entity>
+    <entity name="ReadProgress" representedClassName="ReadProgress" syncable="YES" codeGenerationType="class">
+        <attribute name="bookid" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="progress" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="progressBook" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Book" inverseName="bookProgress" inverseEntity="Book"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-54" positionY="0" width="128" height="284"/>
+        <element name="Challenges" positionX="-36" positionY="9" width="128" height="164"/>
+        <element name="ReadProgress" positionX="-63" positionY="-9" width="128" height="89"/>
+    </elements>
+</model>

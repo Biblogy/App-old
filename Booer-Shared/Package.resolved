@@ -1,0 +1,70 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "Cuckoo",
+        "repositoryURL": "https://github.com/Brightify/Cuckoo.git",
+        "state": {
+          "branch": null,
+          "revision": "71d7423add46808b5335a8ec4f1ddc1304c4cfbc",
+          "version": "1.5.0"
+        }
+      },
+      {
+        "package": "CwlCatchException",
+        "repositoryURL": "https://github.com/mattgallagher/CwlCatchException.git",
+        "state": {
+          "branch": null,
+          "revision": "f809deb30dc5c9d9b78c872e553261a61177721a",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "CwlPreconditionTesting",
+        "repositoryURL": "https://github.com/mattgallagher/CwlPreconditionTesting.git",
+        "state": {
+          "branch": null,
+          "revision": "02b7a39a99c4da27abe03cab2053a9034379639f",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble",
+        "state": {
+          "branch": null,
+          "revision": "d258c638d9ef214723a857a23f4113773aad28fb",
+          "version": "9.1.0"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick",
+        "state": {
+          "branch": null,
+          "revision": "8cce6acd38f965f5baa3167b939f86500314022b",
+          "version": "3.1.2"
+        }
+      },
+      {
+        "package": "Relay",
+        "repositoryURL": "https://github.com/mindbody/Relay.git",
+        "state": {
+          "branch": null,
+          "revision": "a069c3b1b2f70bca267cb61895e0ea85a4dc9cbb",
+          "version": "0.3.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

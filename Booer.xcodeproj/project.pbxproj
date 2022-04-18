@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56397FFC26A46A0300202F19 /* Booer-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 56397FFB26A46A0300202F19 /* Booer-iOS */; };
+		56397FFD26A46A0300202F19 /* Booer-iOS in Resources */ = {isa = PBXBuildFile; fileRef = 56397FFB26A46A0300202F19 /* Booer-iOS */; };
+		56397FFF26A46C3600202F19 /* Booer-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 56397FFE26A46C3600202F19 /* Booer-iOS */; };
+		5676B633263378780039E692 /* BooerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5676B620263378760039E692 /* BooerApp.swift */; };
+		5676B634263378780039E692 /* BooerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5676B620263378760039E692 /* BooerApp.swift */; };
+		5676B637263378780039E692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5676B622263378780039E692 /* Assets.xcassets */; };
+		5676B638263378780039E692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5676B622263378780039E692 /* Assets.xcassets */; };
+		5676B65F263436080039E692 /* Booer-macOS in Frameworks */ = {isa = PBXBuildFile; productRef = 5676B65E263436080039E692 /* Booer-macOS */; };
+		5676B667263436700039E692 /* Booer-Shared in Frameworks */ = {isa = PBXBuildFile; productRef = 5676B666263436700039E692 /* Booer-Shared */; };
+		5676B6692634367B0039E692 /* Booer-Shared in Frameworks */ = {isa = PBXBuildFile; productRef = 5676B6682634367B0039E692 /* Booer-Shared */; };
+		56D09A9D26711CC300504A9F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D09A9C26711CC300504A9F /* CloudKit.framework */; };
+		56D09AB32671378400504A9F /* Booer-macOS in Frameworks */ = {isa = PBXBuildFile; productRef = 56D09AB22671378400504A9F /* Booer-macOS */; };
+		56D34E6F280742D20082291D /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 56D34E6E280742D20082291D /* Inject */; };
+		56ECF5E826F5FFF30014F418 /* BooerUITestsiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ECF5E726F5FFF30014F418 /* BooerUITestsiOS.swift */; };
+		56ECF5EA26F5FFF30014F418 /* BooerUITestsiOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ECF5E926F5FFF30014F418 /* BooerUITestsiOSLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56ECF5EB26F5FFF30014F418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5676B61B263378760039E692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5676B626263378780039E692;
+			remoteInfo = "Booer (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56397FFB26A46A0300202F19 /* Booer-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Booer-iOS"; sourceTree = "<group>"; };
+		56720A5A2646B245003407DC /* BooerSharedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooerSharedTests.swift; sourceTree = "<group>"; };
+		56720A5C2646B245003407DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5676B620263378760039E692 /* BooerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooerApp.swift; sourceTree = "<group>"; };
+		5676B622263378780039E692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5676B627263378780039E692 /* Booer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5676B62A263378780039E692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5676B62F263378780039E692 /* Booer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5676B631263378780039E692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5676B632263378780039E692 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5676B646263379030039E692 /* Booer-macOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Booer-macOS"; sourceTree = "<group>"; };
+		5676B649263379090039E692 /* Booer-Shared */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Booer-Shared"; sourceTree = "<group>"; };
+		5676B675263478380039E692 /* Booer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Booer.entitlements; sourceTree = "<group>"; };
+		56D09A9C26711CC300504A9F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		56D09AA22671371300504A9F /* TestPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56ECF5E526F5FFF20014F418 /* BooerUITestsiOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooerUITestsiOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56ECF5E726F5FFF30014F418 /* BooerUITestsiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooerUITestsiOS.swift; sourceTree = "<group>"; };
+		56ECF5E926F5FFF30014F418 /* BooerUITestsiOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooerUITestsiOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5676B624263378780039E692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56397FFF26A46C3600202F19 /* Booer-iOS in Frameworks */,
+				56D09A9D26711CC300504A9F /* CloudKit.framework in Frameworks */,
+				5676B667263436700039E692 /* Booer-Shared in Frameworks */,
+				56D34E6F280742D20082291D /* Inject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5676B62C263378780039E692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5676B65F263436080039E692 /* Booer-macOS in Frameworks */,
+				5676B6692634367B0039E692 /* Booer-Shared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D09A9F2671371300504A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D09AB32671378400504A9F /* Booer-macOS in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56ECF5E226F5FFF20014F418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56720A592646B245003407DC /* BooerSharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				56720A5A2646B245003407DC /* BooerSharedTests.swift */,
+				56720A5C2646B245003407DC /* Info.plist */,
+			);
+			path = BooerSharedTests;
+			sourceTree = "<group>";
+		};
+		5676B61A263378760039E692 = {
+			isa = PBXGroup;
+			children = (
+				5676B675263478380039E692 /* Booer.entitlements */,
+				56397FFB26A46A0300202F19 /* Booer-iOS */,
+				5676B649263379090039E692 /* Booer-Shared */,
+				5676B646263379030039E692 /* Booer-macOS */,
+				5676B61F263378760039E692 /* Shared */,
+				5676B629263378780039E692 /* iOS */,
+				5676B630263378780039E692 /* macOS */,
+				56720A592646B245003407DC /* BooerSharedTests */,
+				56ECF5E626F5FFF30014F418 /* BooerUITestsiOS */,
+				5676B628263378780039E692 /* Products */,
+				5676B65D263436080039E692 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5676B61F263378760039E692 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5676B620263378760039E692 /* BooerApp.swift */,
+				5676B622263378780039E692 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5676B628263378780039E692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5676B627263378780039E692 /* Booer.app */,
+				5676B62F263378780039E692 /* Booer.app */,
+				56D09AA22671371300504A9F /* TestPreview.app */,
+				56ECF5E526F5FFF20014F418 /* BooerUITestsiOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5676B629263378780039E692 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5676B62A263378780039E692 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		5676B630263378780039E692 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5676B631263378780039E692 /* Info.plist */,
+				5676B632263378780039E692 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		5676B65D263436080039E692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56D09A9C26711CC300504A9F /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56ECF5E626F5FFF30014F418 /* BooerUITestsiOS */ = {
+			isa = PBXGroup;
+			children = (
+				56ECF5E726F5FFF30014F418 /* BooerUITestsiOS.swift */,
+				56ECF5E926F5FFF30014F418 /* BooerUITestsiOSLaunchTests.swift */,
+			);
+			path = BooerUITestsiOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5676B626263378780039E692 /* Booer (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5676B63B263378780039E692 /* Build configuration list for PBXNativeTarget "Booer (iOS)" */;
+			buildPhases = (
+				56720A632646E83E003407DC /* ShellScript */,
+				5676B623263378780039E692 /* Sources */,
+				5676B624263378780039E692 /* Frameworks */,
+				5676B625263378780039E692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Booer (iOS)";
+			packageProductDependencies = (
+				5676B666263436700039E692 /* Booer-Shared */,
+				56397FFE26A46C3600202F19 /* Booer-iOS */,
+				56D34E6E280742D20082291D /* Inject */,
+			);
+			productName = "Booer (iOS)";
+			productReference = 5676B627263378780039E692 /* Booer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5676B62E263378780039E692 /* Booer (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5676B63E263378780039E692 /* Build configuration list for PBXNativeTarget "Booer (macOS)" */;
+			buildPhases = (
+				56720A532646ABC1003407DC /* ShellScript */,
+				5676B62B263378780039E692 /* Sources */,
+				5676B62C263378780039E692 /* Frameworks */,
+				5676B62D263378780039E692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Booer (macOS)";
+			packageProductDependencies = (
+				5676B65E263436080039E692 /* Booer-macOS */,
+				5676B6682634367B0039E692 /* Booer-Shared */,
+			);
+			productName = "Booer (macOS)";
+			productReference = 5676B62F263378780039E692 /* Booer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56D09AA12671371300504A9F /* TestPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D09AAD2671371500504A9F /* Build configuration list for PBXNativeTarget "TestPreview" */;
+			buildPhases = (
+				56D09A9E2671371300504A9F /* Sources */,
+				56D09A9F2671371300504A9F /* Frameworks */,
+				56D09AA02671371300504A9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestPreview;
+			packageProductDependencies = (
+				56D09AB22671378400504A9F /* Booer-macOS */,
+			);
+			productName = TestPreview;
+			productReference = 56D09AA22671371300504A9F /* TestPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56ECF5E426F5FFF20014F418 /* BooerUITestsiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56ECF5EF26F5FFF30014F418 /* Build configuration list for PBXNativeTarget "BooerUITestsiOS" */;
+			buildPhases = (
+				56ECF5E126F5FFF20014F418 /* Sources */,
+				56ECF5E226F5FFF20014F418 /* Frameworks */,
+				56ECF5E326F5FFF20014F418 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56ECF5EC26F5FFF30014F418 /* PBXTargetDependency */,
+			);
+			name = BooerUITestsiOS;
+			productName = BooerUITestsiOS;
+			productReference = 56ECF5E526F5FFF20014F418 /* BooerUITestsiOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5676B61B263378760039E692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5676B626263378780039E692 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5676B62E263378780039E692 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					56D09AA12671371300504A9F = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					56ECF5E426F5FFF20014F418 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 5676B626263378780039E692;
+					};
+				};
+			};
+			buildConfigurationList = 5676B61E263378760039E692 /* Build configuration list for PBXProject "Booer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5676B61A263378760039E692;
+			packageReferences = (
+				56D34E6D280742D20082291D /* XCRemoteSwiftPackageReference "Inject" */,
+			);
+			productRefGroup = 5676B628263378780039E692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5676B626263378780039E692 /* Booer (iOS) */,
+				5676B62E263378780039E692 /* Booer (macOS) */,
+				56D09AA12671371300504A9F /* TestPreview */,
+				56ECF5E426F5FFF20014F418 /* BooerUITestsiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5676B625263378780039E692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56397FFC26A46A0300202F19 /* Booer-iOS in Resources */,
+				5676B637263378780039E692 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5676B62D263378780039E692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5676B638263378780039E692 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D09AA02671371300504A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56397FFD26A46A0300202F19 /* Booer-iOS in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56ECF5E326F5FFF20014F418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56720A532646ABC1003407DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		56720A632646E83E003407DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/Booer-Shared/Tests/Booer-SharedTests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/Booer-Shared/Sources/Booer-Shared/ViewModel/Protocols\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PROJECT_DIR}/run\" --download generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/BookModelProtocol.swift\" \\\n\"${INPUT_DIR}/ChallengeModelProtocol.swift\" \\\n\"${INPUT_DIR}/CalcChallengeDaysProtocol.swift\"\n\necho \"@testable import Booer_Shared\\n$(cat $OUTPUT_FILE)\" > $OUTPUT_FILE\n# ... and so forth, the last line should never end with a backslash \\\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5676B623263378780039E692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5676B633263378780039E692 /* BooerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5676B62B263378780039E692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5676B634263378780039E692 /* BooerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D09A9E2671371300504A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56ECF5E126F5FFF20014F418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56ECF5EA26F5FFF30014F418 /* BooerUITestsiOSLaunchTests.swift in Sources */,
+				56ECF5E826F5FFF30014F418 /* BooerUITestsiOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56ECF5EC26F5FFF30014F418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5676B626263378780039E692 /* Booer (iOS) */;
+			targetProxy = 56ECF5EB26F5FFF30014F418 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5676B639263378780039E692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5676B63A263378780039E692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5676B63C263378780039E692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Booer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RPD69GC7T;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pro.veit.Booer;
+				PRODUCT_NAME = Booer;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5676B63D263378780039E692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Booer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RPD69GC7T;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pro.veit.Booer;
+				PRODUCT_NAME = Booer;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5676B63F263378780039E692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7RPD69GC7T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.veit.Booer;
+				PRODUCT_NAME = Booer;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5676B640263378780039E692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7RPD69GC7T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.veit.Booer;
+				PRODUCT_NAME = Booer;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		56D09AAE2671371500504A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TestPreview/Preview Content\"";
+				DEVELOPMENT_TEAM = 7RPD69GC7T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = veit.pro.TestPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56D09AAF2671371500504A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TestPreview/Preview Content\"";
+				DEVELOPMENT_TEAM = 7RPD69GC7T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = veit.pro.TestPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56ECF5ED26F5FFF30014F418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RPD69GC7T;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = veit.pro.BooerUITestsiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Booer (iOS)";
+			};
+			name = Debug;
+		};
+		56ECF5EE26F5FFF30014F418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RPD69GC7T;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = veit.pro.BooerUITestsiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Booer (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5676B61E263378760039E692 /* Build configuration list for PBXProject "Booer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5676B639263378780039E692 /* Debug */,
+				5676B63A263378780039E692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5676B63B263378780039E692 /* Build configuration list for PBXNativeTarget "Booer (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5676B63C263378780039E692 /* Debug */,
+				5676B63D263378780039E692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5676B63E263378780039E692 /* Build configuration list for PBXNativeTarget "Booer (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5676B63F263378780039E692 /* Debug */,
+				5676B640263378780039E692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D09AAD2671371500504A9F /* Build configuration list for PBXNativeTarget "TestPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D09AAE2671371500504A9F /* Debug */,
+				56D09AAF2671371500504A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56ECF5EF26F5FFF30014F418 /* Build configuration list for PBXNativeTarget "BooerUITestsiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56ECF5ED26F5FFF30014F418 /* Debug */,
+				56ECF5EE26F5FFF30014F418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56D34E6D280742D20082291D /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56397FFE26A46C3600202F19 /* Booer-iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Booer-iOS";
+		};
+		5676B65E263436080039E692 /* Booer-macOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Booer-macOS";
+		};
+		5676B666263436700039E692 /* Booer-Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Booer-Shared";
+		};
+		5676B6682634367B0039E692 /* Booer-Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Booer-Shared";
+		};
+		56D09AB22671378400504A9F /* Booer-macOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Booer-macOS";
+		};
+		56D34E6E280742D20082291D /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56D34E6D280742D20082291D /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5676B61B263378760039E692 /* Project object */;
+}

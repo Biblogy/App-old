@@ -1,0 +1,79 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
+        }
+      },
+      {
+        "package": "Cuckoo",
+        "repositoryURL": "https://github.com/Brightify/Cuckoo.git",
+        "state": {
+          "branch": null,
+          "revision": "39e05cdf563f90be1652483ce7731d5be45c7153",
+          "version": "1.5.1"
+        }
+      },
+      {
+        "package": "CwlCatchException",
+        "repositoryURL": "https://github.com/mattgallagher/CwlCatchException.git",
+        "state": {
+          "branch": null,
+          "revision": "35f9e770f54ce62dd8526470f14c6e137cef3eea",
+          "version": "2.1.1"
+        }
+      },
+      {
+        "package": "CwlPreconditionTesting",
+        "repositoryURL": "https://github.com/mattgallagher/CwlPreconditionTesting.git",
+        "state": {
+          "branch": null,
+          "revision": "fb7a26374e8570ff5c68142e5c83406d6abae0d8",
+          "version": "2.0.2"
+        }
+      },
+      {
+        "package": "Inject",
+        "repositoryURL": "https://github.com/krzysztofzablocki/Inject.git",
+        "state": {
+          "branch": null,
+          "revision": "d8def72472095f3da09c6fcb80e3f4a51188f4ad",
+          "version": "1.0.5"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble",
+        "state": {
+          "branch": null,
+          "revision": "c93f16c25af5770f0d3e6af27c9634640946b068",
+          "version": "9.2.1"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick",
+        "state": {
+          "branch": null,
+          "revision": "8cce6acd38f965f5baa3167b939f86500314022b",
+          "version": "3.1.2"
+        }
+      },
+      {
+        "package": "Relay",
+        "repositoryURL": "https://github.com/mindbody/Relay.git",
+        "state": {
+          "branch": null,
+          "revision": "a069c3b1b2f70bca267cb61895e0ea85a4dc9cbb",
+          "version": "0.3.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
