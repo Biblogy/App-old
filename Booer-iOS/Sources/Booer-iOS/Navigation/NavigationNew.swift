@@ -21,7 +21,8 @@ public struct NavigationNew: View {
     public var body: some View {
         Group(){
             if sizeClass == .compact {
-                DashboardView()
+//                DashboardView()
+                TabbarView()
             } else {
                 NavigationView() {
                     if #available(iOS 15.0, *) {
